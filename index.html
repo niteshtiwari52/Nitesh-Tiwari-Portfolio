@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <!-- NAVIGATION SECTION  -->
+        <nav class="navbar">
+            <h1>Nitesh Tiwari portfolio</h1>
+            <div class="navigationmenu">
+                <a href="#home">Home </a>
+                <a href="#aboutme">About Me </a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects </a>
+                <a href="contactform">Let's Connect</a>
+            </div>
+        </nav>
+        <!-- NAVIGATION SECTION END  -->
+
+        <!-- HERO SECTION  -->
+        <section class="herosection">
+            <img class="profileimage" src="./images/nitesh.jpg" alt="">
+            <div class="herosectiondetails">
+                <h1>Nitesh Tiwari</h1>
+                <h3>Full Stack Developer</h3>
+            </div>
+        </section>
+        <!-- HERO SECTION END  -->
+
+        <!-- ABOUT SECTION  -->
+        <section class="aboutme" id="aboutme">
+            <h1>What I Do...</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ipsa, eum illum exercitationem ab sit at
+                ipsum, sapiente veritatis fugit necessitatibus. Reprehenderit animi deserunt beatae tenetur dolor quod
+                fugit ab ipsam quis natus? Facere adipisci mollitia animi officiis illo et obcaecati repellendus a,
+                nesciunt corrupti totam repudiandae, voluptas ex accusantium molestiae nam tenetur enim nisi ad dicta,
+                quaerat harum delectus. Corrupti omnis tenetur aspernatur dignissimos dolores in incidunt repellendus,
+                minus ab! Dolorum placeat nobis consequuntur quo unde repellat consectetur adipisci possimus quaerat
+                dignissimos distinctio nam ipsum nesciunt molestias maiores, non, asperiores incidunt perferendis
+                nostrum, eligendi voluptas culpa. Sequi, in adipisci.</p>
+        </section>
+        <!-- ABOUT SECTION END  -->
+
+        <!-- SKILLS AND PROJECTS SECTION  -->
+        <section class="skillsandprojects">
+            <div class="skills" id="skills">
+                <h1 class="cardheading">Skills</h1>
+                <img src="./images/html.svg" alt="" title="html">
+                <img src="./images/css.svg" alt="" title="CSS">
+                <img src="./images/javascript.svg" alt="" title="javascript">
+                <img src="./images/node.svg" alt="" title="Nodejs">
+                <img src="./images/react.svg" alt="" title="React">
+                <img src="./images/mongodb.svg" alt="" title="MongoDB">
+                <img src="./images/firebase.svg" alt="" title="firebasr">
+                <img src="./images/redux.svg" alt="" title="Redux">
+            </div>
+
+            <div class="projects" id="projects">
+                <h1 class="cardheading">Projects</h1>
+                <div class="projectcontainer">
+                    <img src="./images/css.svg" alt="">
+                    <div class="projectdescription">
+                        <h4>Project Name</h4>
+                        <p>Some details of the project.Some details of the project.Some details of the project.</p>
+
+                    </div>
+                </div>
+                <div class="projectcontainer">
+                    <img src="./images/css.svg" alt="">
+                    <div class="projectdescription">
+                        <h4>Project Name</h4>
+                        <p>Some details of the project.Some details of the project.Some details of the project.</p>
+
+                    </div>
+                </div>
+                <div class="projectcontainer">
+                    <img src="./images/css.svg" alt="">
+                    <div class="projectdescription">
+                        <h4>Project Name</h4>
+                        <p>Some details of the project.Some details of the project.Some details of the project.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SKILLS AND PROJECTS SECTION END -->
+
+        <!-- CONTACT SECTION  -->
+        <section class="contactform" id="contactform">
+            <h1>Let's Connect</h1>
+            <div class="formgroup">
+                <label for="name">Enter Full Name</label><br>
+                <input type="text" id="name" placeholder="Full Nmae">
+            </div>
+            <div class="formgroup">
+                <label for="Email">Emaile</label><br>
+                <input type="text" id="email" placeholder="Email">
+            </div>
+            <div class="formgroup">
+                <label for="name">Enter Full Name</label><br>
+                <input type="text" id="name" placeholder="Full Nmae">
+            </div>
+            <div class="formgroup">
+                <label for="message">Message</label><br>
+                <textarea name="w3review" id="message" cols="30" rows="4" placeholder="Send Some Message!"></textarea>
+            </div>
+            <button class="submitButton" onClick={submit()}>Connect<button>
+        </section>
+        <!-- CONTACT SECTION END  -->
+    </main>
+    <!-- MAIN SECTION END  -->
+</body>
+
+</html>
