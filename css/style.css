@@ -279,3 +279,11 @@ main::-webkit-scrollbar{
     font-weight: 400;
   }
 }
+
+
+@media only screen and (max-width: 890px){
+    .navbar{
+      color: red;
+      display: flex;
+    }
+}
