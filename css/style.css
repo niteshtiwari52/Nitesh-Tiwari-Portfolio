@@ -40,7 +40,7 @@ body::before{
   height: 100vh;
   background: linear-gradient(
 180deg
-, rgba(103, 25, 105, 0.72) 0%, rgba(233, 37, 37, 0.45) 100%);
+,rgb(220 143 222 / 72%) 0%, rgb(201 170 226 / 45%) 100%);
   -webkit-backdrop-filter: saturate(3);
   backdrop-filter: saturate(3);
 }
@@ -229,6 +229,7 @@ main::-webkit-scrollbar{
 .projectcontainer > .projectdescription > p{
   margin: 0;
   margin-bottom: 1rem;
+  /* display: inline; */
 }
 
 .contactform{
