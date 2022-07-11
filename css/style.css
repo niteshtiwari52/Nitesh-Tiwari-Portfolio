@@ -9,7 +9,7 @@
 }
 
 /* Smooth Scroll */
-html{
+html {
   scroll-behavior: smooth;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -20,27 +20,30 @@ html{
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 /* Custom Scrollbar END */
 
 /* Styles for background */
-body::before{
+body::before {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(
-180deg
-,rgb(220 143 222 / 72%) 0%, rgb(201 170 226 / 45%) 100%);
+  /* background: linear-gradient(
+    180deg,
+    rgb(220 143 222 / 72%) 0%,
+    rgb(201 170 226 / 45%) 100%
+  ); */
+  background-color: black;
   -webkit-backdrop-filter: saturate(3);
   backdrop-filter: saturate(3);
 }
@@ -71,55 +74,63 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 1250px;
+  max-width: 1460px;
   width: 100%;
   border-radius: 5px;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   font-weight: 500;
-  padding: 1rem 1rem 2rem 1rem;
+  padding: 0rem 0rem 2rem 0rem;
   overflow: auto;
+  background: white;
+  color: black;
 }
 
-main::-webkit-scrollbar{
+main::-webkit-scrollbar {
   display: none;
 }
 
 /* navbar styles */
-.navbar{
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   border-bottom: 1.5px solid rgb(255 255 255 / 35%);
+  position: sticky;
+  top: 0px;
+  background: white;
 }
 
-.navbar > h1,.navbar > navigationMenu{
+.navbar > h1,
+.navbar > navigationMenu {
   margin: 10px;
 }
 
-.navigationmenu > a{
+.navigationmenu > a {
   padding: 5px 10px;
-  margin-left: 10px; 
+  margin-left: 10px;
   text-decoration: none;
   color: black;
   display: inline-block;
 }
 
-.navigationmenu > a:hover{
+.navigationmenu > a:hover {
   transition: ease-in-out 300ms;
-  background: white;
+  background: black;
+  color: lawngreen;
+  border-radius: 3rem;
 }
 
-@media only screen and (max-width: 760px){
-  .navigationmenu{
+@media only screen and (max-width: 760px) {
+  .navigationmenu {
     display: none;
   }
 }
 /* navbar styles end */
 
 /* Hero section styles */
-.herosection{
+.herosection {
   margin: 2rem 0;
   width: 100%;
   display: flex;
@@ -128,7 +139,7 @@ main::-webkit-scrollbar{
   justify-content: space-evenly;
 }
 
-.profileimage{
+.profileimage {
   width: 350px;
   height: 350px;
   object-fit: cover;
@@ -136,11 +147,11 @@ main::-webkit-scrollbar{
   border-radius: 200px;
 }
 
-.herosectiondetails{
+.herosectiondetails {
   text-align: center;
 }
 
-.herosectiondetails > h1{
+.herosectiondetails > h1 {
   font-size: 50px;
   margin: 10px;
 }
@@ -148,13 +159,17 @@ main::-webkit-scrollbar{
 /* Hero section styles end */
 
 /* about me styles */
-.aboutme{
-  margin: 1rem;
+.aboutme {
+  margin: 8rem;
   text-align: center;
+}
+.aboutme h1 {
+  /* color: red; */
+  font-size: 4rem;
 }
 /* about me styles end */
 
-.skillsandprojects{
+.skillsandprojects {
   margin: 1rem;
   display: grid;
   grid-template-columns: [one] 50% [two] 50%;
@@ -164,20 +179,22 @@ main::-webkit-scrollbar{
   width: calc(100% - 2rem);
 }
 
-@media only screen and (max-width: 720px){
-  .skillsandprojects{
+@media only screen and (max-width: 720px) {
+  .skillsandprojects {
     grid-template-columns: [one] 100%;
-    grid-template-rows: [one] [two]; 
+    grid-template-rows: [one] [two];
   }
 }
 
-.skillsandprojects > .skills,.skillsandprojects> .projects{
+.skillsandprojects > .skills,
+.skillsandprojects > .projects {
   min-width: 250px;
   margin: 1rem;
   min-height: 250px;
 }
 
-.skillsandprojects > .skills, .skillsandprojects > .projects{
+.skillsandprojects > .skills,
+.skillsandprojects > .projects {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -188,9 +205,11 @@ main::-webkit-scrollbar{
   border-radius: 5px;
   padding: 1rem;
   margin-bottom: 2rem;
+  background-color: black;
+  color: white;
 }
 
-.cardheading{
+.cardheading {
   display: block;
   width: 90%;
   /* text-align: center; */
@@ -198,93 +217,101 @@ main::-webkit-scrollbar{
   margin-bottom: 1rem;
 }
 
-.skillsandprojects > .skills > img{
+.skillsandprojects > .skills > img {
   width: 60px;
   height: 60px;
   margin-bottom: 15px;
   margin-right: 15px;
 }
 
-.skillsandprojects > .skills > img:hover{
+.skillsandprojects > .skills > img:hover {
   transition: ease-in 300ms;
   transform: scale(0.85);
   cursor: pointer;
 }
 
-.projectcontainer{
+.projectcontainer {
   display: flex;
   width: 90%;
 }
 
-.projectcontainer > img{
+.projectcontainer > img {
   width: 60px;
   height: 60px;
   padding-right: 10px;
 }
 
-.projectcontainer > .projectdescription > h4{
+.projectcontainer > .projectdescription > h4 {
   margin: 0;
 }
 
-.projectcontainer > .projectdescription > p{
+.projectcontainer > .projectdescription > p {
   margin: 0;
   margin-bottom: 1rem;
   /* display: inline; */
 }
 
-.contactform{
+.contactform {
   margin: 2rem;
   width: calc(100% - 4rem);
   background-color: rgb(255 255 255 / 31%);
   border: 1px solid rgb(255 255 255 / 31%);
   border-radius: 5px;
   padding: 1rem;
+  background-color: black;
+  color: white;
 }
 
-.contactform > .formgroup{
+.contactform > .formgroup {
   margin-bottom: 1rem;
 }
 
-.formgroup > input, .formgroup > textarea{
+.formgroup > input,
+.formgroup > textarea {
   width: 100%;
   padding: 5px 10px;
   margin-top: 5px;
   font-weight: 600;
 }
 
-.submitButton{
+.submitButton {
   padding: 10px 20px;
   font-weight: 600;
   font-size: 15px;
 }
 
-@media only screen and (max-width: 460px){
-
-  .profileimage{
+@media only screen and (max-width: 460px) {
+  .profileimage {
     width: 250px;
     height: 250px;
     object-fit: cover;
     object-position: center;
-    border-radius: 5px;
+    border-radius: 210px;
+  }
+  .aboutme {
+    margin: 1rem;
+    text-align: center;
+  }
+  .aboutme h1 {
+    font-size: 2rem;
   }
 
-  .herosectiondetails > h1{
+  .herosectiondetails > h1 {
     font-size: 30px;
     margin-top: 1.5rem;
     margin-bottom: 0rem;
-  } 
+  }
 
-  .herosectiondetails > h3{
+  .herosectiondetails > h3 {
     font-size: 20px;
     margin: 0;
     font-weight: 400;
   }
 }
 
-
-@media only screen and (max-width: 890px){
-    .navbar{
-      color: red;
-      display: flex;
-    }
+@media only screen and (max-width: 890px) {
+  .navbar {
+    color: red;
+    display: flex;
+  }
 }
