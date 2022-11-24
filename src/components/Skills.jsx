@@ -37,7 +37,7 @@ const Skills = () => {
       id: 4,
       src:bootstrap,
       title: "Bootstrap",
-      style:"shadow-blue-600"
+      style:"shadow-blue-700"
     },
     {
       id: 5,
@@ -55,37 +55,37 @@ const Skills = () => {
       id: 8,
       src:redux,
       title: "Redux",
-      style:"shadow-blue-600"
+      style:"shadow-violet-600"
     },
     {
       id: 9,
       src:express,
       title: "Express",
-      style:"shadow-blue-600"
+      style:"shadow-neutral-50"
     },
     {
       id: 10,
       src:nodejs,
       title: "Nodejs",
-      style:"shadow-blue-600"
+      style:"shadow-lime-600"
     },
     {
       id: 11,
       src:mongoDb,
       title: "mongoDb",
-      style:"shadow-blue-600"
+      style:"shadow-lime-600"
     },   
     {
       id: 12,
       src: git,
       title: "Git",
-      style: "shadow-gray-400",
+      style: "shadow-red-500",
     },
     {
       id: 13,
       src:postman,
       title: "postman",
-      style:"shadow-blue-600"
+      style:"shadow-orange-600"
     },
        
     
