@@ -1,6 +1,27 @@
-import React from 'react'
+import React, {useState} from 'react'
+
 
 const Contact = () => {
+
+  const [formData , setFormData] = useState({
+    name : "",
+    email : "",
+    message : ""
+  })
+
+  const handleChange = (e) =>{
+    console.log(e.target.name , e.target.value)
+    setFormData({...formData , [e.target.name] : e.target.value})
+  } 
+  const handleSubmit = (e) =>{
+    if(formData.name ==="" || formData.email === "" || formData.message === ""){
+      e.preventDefault();
+      alert("Please fill all the Details.");
+    }
+  
+  } 
+
+
   return (
     <>
          <div
@@ -26,22 +47,29 @@ const Contact = () => {
               name="name"
               placeholder="Enter your name"
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              onChange={handleChange}
+              value = {formData.name}              
             />
             <input
               type="email"
               name="email"
               placeholder="Enter your email"
               className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              onChange={handleChange}
+              value = {formData.email}
             />
             <textarea
+              type = "text"
               name="message"
               placeholder="Enter your message"
               rows="10"
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-            ></textarea>
+              onChange={handleChange}
+              value = {formData.message}
+            />
 
-            <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
-              Let's talk
+            <button onClick={handleSubmit} className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+             Submit
             </button>
           </form>
         </div>
