@@ -11,6 +11,8 @@ import mongoDb from "../assets/skills/mongodb.svg"
 import express from "../assets/skills/express.svg"
 import git from "../assets/skills/git.svg";
 import postman from "../assets/skills/postman.png";
+import docker from "../assets/skills/docker.svg";
+import aws from "../assets/skills/aws.svg";
 
 const Skills = () => {
   const techs = [
@@ -79,13 +81,27 @@ const Skills = () => {
       id: 12,
       src: git,
       title: "Git",
-      style: "shadow-red-500",
+      style: "shadow-flamingo-500",
     },
     {
       id: 13,
       src:postman,
       title: "postman",
-      style:"shadow-orange-600"
+      // style:"shadow-orange-600"
+      style:"shadow-coral-500"
+      
+    },
+    {
+      id: 14,
+      src:docker,
+      title: "Docker",
+      style:"shadow-blue-500"
+    },
+    {
+      id: 15,
+      src:aws,
+      title: "AWS",
+      style:"shadow-buttercup-500"
     },
        
     
