@@ -3,35 +3,44 @@ import ZomatoClone from "../assets/projects/Zomato Clone.png";
 import nodeServer from "../assets/projects/bookRecordServer.png";
 import myTask from "../assets/projects/myTask.png";
 import bookMyShow from "../assets/projects/bookMyShow.png";
+import eTalk from "../assets/projects/eTalk.png";
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      src: ZomatoClone,
-      demo : "http://ec2-43-204-107-86.ap-south-1.compute.amazonaws.com/delivery",
-      code : "https://github.com/Nitesh52221/zomato-clone",
-
-    },
-    {
-      id: 2,
-      src: nodeServer,
-      demo : "#",
-      code : "https://github.com/Nitesh52221/Book-Record-Management-Backend",
-
-    },
-    {
-      id: 3,
       src: myTask,
       demo : "https://todomytasks.netlify.app/",
       code : "https://github.com/Nitesh52221/My-Task",
 
     },
     {
-      id: 4,
+      id: 2,
       src: bookMyShow,
       demo: "https://book-my-show-clone-tau-ten.vercel.app/",
       code: "https://github.com/Nitesh52221/Book-my-show-clone-using-react",
+
+    },
+    
+    {
+      id: 3,
+      src: nodeServer,
+      demo : "#",
+      code : "https://github.com/Nitesh52221/Book-Record-Management-Backend",
+
+    },
+    {
+      id: 4,
+      src: ZomatoClone,
+      demo : "http://ec2-43-204-107-86.ap-south-1.compute.amazonaws.com/delivery",
+      code : "https://github.com/Nitesh52221/zomato-clone",
+
+    },
+    {
+      id: 5,
+      src: eTalk,
+      demo : "https://e-talk.vercel.app",
+      code : "https://github.com/niteshtiwari52/E-Talk",
 
     },
     
