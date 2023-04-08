@@ -14,7 +14,7 @@ const Home = () => {
                       
 
                         <div>
-                            <a  href="/resume.pdf" download={true} className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
+                            <a  href="/Nitesh_Tiwari_resume.pdf" download={true} className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
                                 
                                 Resume 
                                 <span className='group-hover:rotate-90 duration-300'>
