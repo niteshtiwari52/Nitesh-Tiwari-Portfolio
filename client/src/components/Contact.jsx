@@ -24,7 +24,7 @@ const Contact = () => {
       email : formData.email,
       message : formData.message
     }
-    const res = await axios.post("http://localhost:5000/api/v1/contact", data);
+    const res = await axios.post(`{process.env.REACT_APP_BACKEND_URL}/api/v1/contact`, data);
     // console.log(res.data.success)
     if(res.data.success === true){
       alert("Your query has been submitted. A confirmation mail has been sent to your email.")
