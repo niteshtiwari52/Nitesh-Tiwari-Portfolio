@@ -2,7 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const contactRoutes = require("./routes/contactRoutes");
-const { CLIENT_ACCESS_URL } = require("../server/config/dev");
+const { CLIENT_ACCESS_URL } = require("../server/config/keys");
 dotenv.config();
 const app = express();
 app.use(cors({ origin: CLIENT_ACCESS_URL }));
