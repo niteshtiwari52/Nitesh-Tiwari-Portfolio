@@ -2,6 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const contactRoutes = require("./routes/contactRoutes");
+const { CLIENT_ACCESS_URL } = require("../server/config/dev");
 dotenv.config();
 const app = express();
 app.use(cors());
