@@ -1,7 +1,7 @@
 module.exports = {
   SMPT_SERVICES: "gmail",
   SMPT_MAIL: "niteshtiwari5222@gmail.com",
-  SMPT_PASSWORD: "klzkjyxcbmioqusa",
+  SMPT_PASSWORD: "jbkevmweobehabfq",
   SMPT_HOST: "smtp.gmail.com",
   SMPT_PORT: "465",
   // # SMPT_HOST = imap.gmail.com

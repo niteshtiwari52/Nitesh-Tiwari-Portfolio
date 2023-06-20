@@ -5,7 +5,7 @@ const contactRoutes = require("./routes/contactRoutes");
 const { CLIENT_ACCESS_URL } = require("../server/config/dev");
 dotenv.config();
 const app = express();
-app.use(cors());
+app.use(cors({ origin: CLIENT_ACCESS_URL }));
 app.use(express.json()); //to accept json data
 app.get("/", (req, res) => {
   res.json({

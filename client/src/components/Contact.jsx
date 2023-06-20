@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import axios from "axios";
 
 const Contact = () => {
 
@@ -10,15 +10,31 @@ const Contact = () => {
   })
 
   const handleChange = (e) =>{
-    console.log(e.target.name , e.target.value)
+    // console.log(e.target.name , e.target.value)
     setFormData({...formData , [e.target.name] : e.target.value})
   } 
-  const handleSubmit = (e) =>{
+  const handleSubmit = async (e) =>{
     if(formData.name ==="" || formData.email === "" || formData.message === ""){
       e.preventDefault();
-      alert("Please fill all the Details.");
+      return alert("Please fill all the Details.");
     }
-  
+    console.log(formData)
+    const data  = {
+      name : formData.name,
+      email : formData.email,
+      message : formData.message
+    }
+    const res = await axios.post("http://localhost:5000/api/v1/contact", data);
+    console.log(res.data.success)
+    if(res.data.success === true){
+      alert("Your query has been submitted. A confirmation mail has been sent to your email.")
+    }
+
+    setFormData(
+      formData.name = "",
+      formData.email ="",
+      formData.message = ""
+    )
   } 
 
 
@@ -37,11 +53,8 @@ const Contact = () => {
         </div>
 
         <div className=" flex justify-center items-center">
-          <form
-            action={process.env.REACT_APP_BACKEND_URL}
-            method="POST"
-            className=" flex flex-col w-full md:w-1/2"
-          >
+         
+            <div className=" flex flex-col w-full md:w-1/2">
             <input
               type="text"
               name="name"
@@ -71,7 +84,7 @@ const Contact = () => {
             <button onClick={handleSubmit} className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
              Submit
             </button>
-          </form>
+            </div>
         </div>
       </div>
     </div>
