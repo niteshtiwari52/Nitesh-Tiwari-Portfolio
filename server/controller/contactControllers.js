@@ -8,7 +8,7 @@ const contact = async (req, res) => {
       email: email,
       message: message,
     };
-    console.log(data);
+    // console.log(data);
 
     //   sending the confirmation to sender person
     let options = {
