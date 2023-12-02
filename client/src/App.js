@@ -1,3 +1,4 @@
+import { useState } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
@@ -8,17 +9,23 @@ import Skills from "./components/Skills";
 import SocialLinks from "./components/SocialLinks";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(true);
   return (
     <>
-      <Modal />
-      <Navbar />
-      <Home />
-      {/* <About /> */}
-      <Skills />
-      <Projects />
-      <Contact />
+      {isOpen ? (
+        <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
+      ) : (
+        <>
+          <Navbar />
+          <Home />
+          {/* <About /> */}
+          <Skills />
+          <Projects />
+          <Contact />
 
-      <SocialLinks />
+          <SocialLinks />
+        </>
+      )}
     </>
   );
 }

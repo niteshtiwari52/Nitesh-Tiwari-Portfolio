@@ -2,9 +2,7 @@ import React, { useState, Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { IoMdClose } from "react-icons/io";
 
-const Modal = () => {
-  const [isOpen, setIsOpen] = useState(true);
-
+const Modal = ({ isOpen, setIsOpen }) => {
   function closeModal() {
     setIsOpen(false);
   }
