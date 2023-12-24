@@ -61,7 +61,7 @@ const Modal = ({ isOpen, setIsOpen }) => {
                     </p>
                     <p className="text-lg font-bold text-red-500">
                       Expected Time & Date of release of new version: 3PM on
-                      25/12/2023
+                      28/12/2023
                     </p>
                   </div>
                 </Dialog.Panel>
