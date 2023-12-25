@@ -12,20 +12,20 @@ function App() {
   const [isOpen, setIsOpen] = useState(true);
   return (
     <>
-      {isOpen ? (
+      {/* {isOpen ? (
         <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
       ) : (
-        <>
-          <Navbar />
-          <Home />
-          {/* <About /> */}
-          <Skills />
-          <Projects />
-          <Contact />
+        <> */}
+      <Navbar />
+      <Home />
+      {/* <About /> */}
+      <Skills />
+      <Projects />
+      <Contact />
 
-          <SocialLinks />
-        </>
-      )}
+      <SocialLinks />
+      {/* </>
+      )} */}
     </>
   );
 }
