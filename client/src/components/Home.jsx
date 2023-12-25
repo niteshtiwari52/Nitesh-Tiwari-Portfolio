@@ -18,7 +18,7 @@ const Home = () => {
 
             <div>
               <a
-                href="/Nitesh_Tiwari_resume.pdf"
+                href="https://drive.google.com/file/d/1Fyb5kNVIENFTatR5qK6fuoKq4A9daibB/view"
                 download={true}
                 className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
               >
